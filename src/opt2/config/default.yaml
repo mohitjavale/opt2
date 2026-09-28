@@ -1,0 +1,56 @@
+world:
+  gravity: [0.0, 0.0, -9.8]
+
+entities:
+  table:
+    l: 2.74
+    w: 1.525
+    h: 0.012
+    mu: 0.102            # friction coefficient
+    epsilon_t: 0.883     # restitution coefficient
+    color: [0.274, 0.627, 0.494, 1.0]
+
+  net:
+    l: 0.002
+    w: 1.83
+    h: 0.1525
+    color: [0.25, 0.25, 0.25, 0.75]
+
+  ball:
+    r: 0.02
+    m: 0.0027
+    C_D: 0.141           # drag coefficient
+    C_L: 0.001           # lift coefficient
+    color: [1.0, 1.0, 1.0, 1.0]
+
+  racket:
+    r: 0.08
+    t: 0.001
+    k_p: 0.0019
+    k_pv: 0.703
+    k_pw: 2222.222
+    epsilon_r: 0.788     # restitution coefficient
+    color1: [1.0, 0.0, 0.0, 0.5]
+    color2: [0.0, 0.0, 1.0, 0.5]
+
+  robot:
+    t: 0.1
+    l2: 0.4
+    l3: 0.4
+
+solver:
+  nx: 12
+  nu: 6
+  n1: 50
+  n2: 50
+  n3: 50
+  n4: 0
+  dt: 0.01
+  tg: 0.4
+
+
+renderer:
+  fps: 60
+  show_grid: True
+  trail_len: 60
+
